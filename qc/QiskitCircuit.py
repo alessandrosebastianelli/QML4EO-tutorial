@@ -23,10 +23,10 @@ class QiskitCircuit():
             None, QiskitCircuit object is created
         '''
         self.n_qubits = NUM_QUBITS
-        self.circuit = qiskit.QuantumCircuit(self.n_qubits)
-        self.thetas = {k: Parameter('Theta' + str(k)) for k in range(NUM_LAYERS * self.n_qubits)}
-        self.backend = SIMULATOR
-        self.shots   = NUM_SHOTS
+        self.circuit  = qiskit.QuantumCircuit(self.n_qubits)
+        self.thetas   = {k: Parameter('Theta' + str(k)) for k in range(NUM_LAYERS * self.n_qubits)}
+        self.backend  = SIMULATOR
+        self.shots    = NUM_SHOTS
 
         self.__build_circuit()
 
@@ -40,7 +40,7 @@ class QiskitCircuit():
             |0>--H---R2--#--|---|---|---x---x---Rn+2---#............---Z2
             |0>--H---R3--#------|---|---|---|---Rn+3---#............---Z3
             .............#..........|.......|..........#.................
-            |0>--H---Rn--#----------|-------|---Rn+n---#............---Z4
+            |0>--H---Rn--#----------|-------|---Rn+n---#............---Zn
                          #            Layer            #  Layer 2
                          ###############################
 
