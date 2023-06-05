@@ -8,7 +8,6 @@ This tutorial is meant to be done in google colab
 
 In any case you can run everything on your hardare, but keep attention to the enviroment (so skip cells that want to install packages) (follow the [requirements file](requirements.txt)). Moreover you need to adjust paths both in [config file](config.py) and at the beginning of the [notebook](HQCNN.ipynb).
 
-
 ## Configuration file
 
 Before running the [notebook](HQCNN.ipynb) you must check the [config file](config.py). This file is organized in thre sections:
@@ -16,6 +15,11 @@ Before running the [notebook](HQCNN.ipynb) you must check the [config file](conf
 - QCNN settings: here you can modify the quantum cicuit structure by acting on "NUM_QUBITS" and "NUM_LAYERS
 - Dataset settings: here you have to set the root path of the training and validation set respectively
 - Training settings: here you can modify parameters like learning rate, momentum, etc.
+
+## Additional Notebooks
+
+- Visualize EO data [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alessandrosebastianelli/QML4EO-tutorial/blob/main/EOVis.ipynb)
+
 
 ## Main references
 - **Sebastianelli, A., Del Rosso, M. P., Ullo, S. L., & Gamba, P. (2023). On Quantum Hyperparameters Selection in Hybrid Classifiers for Earth Observation Data.**
