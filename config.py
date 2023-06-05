@@ -6,7 +6,7 @@ import os
 #----------------------- Quantum Circuit Settings -----------------------
 NUM_QUBITS      = 4
 NUM_SHOTS       = 1 # for timing reasons is set to 1, but in IRL you want this value to be higher https://quantumcomputing.stackexchange.com/questions/9823/what-is-meant-with-shot-in-quantum-computation
-NUM_LAYERS      = 5
+NUM_LAYERS      = 2
 SHIFT           = np.pi/4
 
 def create_QC_OUTPUTS():
@@ -19,7 +19,7 @@ NUM_QC_OUTPUTS  = len(QC_OUTPUTS)
 SIMULATOR       = qiskit.Aer.get_backend('qasm_simulator')
 
 #----------------------- Dataset Settings -----------------------
-DATASET_ROOT    = os.path.join(os.sep, 'content','EuroSAT')
+DATASET_ROOT    = 'EuroSAT_2'
 SPLIT_FACTOR    = 0.2
 
 CLASS_DICT      = {
