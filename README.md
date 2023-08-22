@@ -16,11 +16,6 @@ Before running the [notebook](HQCNN.ipynb) you must check the [config file](conf
 - Dataset settings: here you have to set the root path of the training and validation set respectively
 - Training settings: here you can modify parameters like learning rate, momentum, etc.
 
-## Additional Notebooks
-
-- Visualize EO data [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alessandrosebastianelli/QML4EO-tutorial/blob/main/EOVis.ipynb)
-
-
 ## Main references
 - **Sebastianelli, A., Del Rosso, M. P., Ullo, S. L., & Gamba, P. (2023). On Quantum Hyperparameters Selection in Hybrid Classifiers for Earth Observation Data.**
 - **Sebastianelli, A., Zaidenberg, D. A., Spiller, D., Le Saux, B., & Ullo, S. L. (2021). On circuit-based hybrid quantum neural networks for remote sensing imagery classification. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 15, 565-580.**
