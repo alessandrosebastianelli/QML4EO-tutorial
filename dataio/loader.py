@@ -18,6 +18,7 @@ class EuroSATDataset(Dataset):
         self.root_dir = root_dir
         self.transform = transform
         self.classes = sorted(os.listdir(root_dir))
+        self.classes = [self.classes[0], self.classes[-1]]
 
         self.data = []
         for class_label in self.classes:
