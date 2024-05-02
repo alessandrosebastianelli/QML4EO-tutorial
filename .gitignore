@@ -3,3 +3,4 @@ EuroSAT_2
 __pycache__
 .ipynb_checkpoints
 EuroSAT.zip
+.DS_Store

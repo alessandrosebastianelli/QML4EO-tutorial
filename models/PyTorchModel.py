@@ -119,6 +119,7 @@ class PyTorchModel:
             for i in range(tra_size//batch_size):
                 x, y    = next(tra_dl)
                 outputs = self.model.forward(x)
+                print(outputs)
                 self.optimizer.zero_grad()
                 loss    = self.criterion(outputs, y) 
                 loss.backward() 
@@ -140,8 +141,9 @@ class PyTorchModel:
                     x, y    = next(val_dl)
                     outputs = self.model.forward(x)
                     loss    = self.criterion(outputs, y)
-                    targets.append(y.item())
-                    predictions.append(self.model.predict(x).item())
+                    for i in range(len(y)):
+                        targets.append(y[i])
+                        predictions.append(torch.argmax(outputs[i,...]))
                     l = loss.item()
                     val_loss += l
 
@@ -156,6 +158,14 @@ class PyTorchModel:
                     break
                 esct = es.counter
 
+            ## Every 3 epochs print the classification report
+            if epoch == 0:
+                cf = confusion_matrix(targets, predictions, normalize='true')
+                cr = classification_report(targets, predictions, target_names=classes, digits=4)
+                print('\t\t [*] Confusion Matrix:')
+                print_CF(cf, classes)
+                print('\t\t [*] Classification Report:')
+                print(cr)
             ## Every 3 epochs print the classification report
             if epoch % 3 == 1:
                 cf = confusion_matrix(targets, predictions, normalize='true')

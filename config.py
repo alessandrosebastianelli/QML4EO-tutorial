@@ -29,8 +29,8 @@ CLASS_DICT      = {
 TRAINING        = True
 LOAD_CHECKPOINT = False
 EPOCHS          = 20
-LEARNING_RATE   = 0.002
+LEARNING_RATE   = 0.0002
 MOMENTUM        = 0.5
-BATCH_SIZE      = 1
+BATCH_SIZE      = 16
 CLASSES         = len(CLASS_DICT)
 
