@@ -4,3 +4,6 @@ __pycache__
 .ipynb_checkpoints
 EuroSAT.zip
 .DS_Store
+dataset
+lightning_logs
+saved_models

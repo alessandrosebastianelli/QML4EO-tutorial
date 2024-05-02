@@ -14,6 +14,6 @@ cd /content/dataset
 mv EuroSAT training
 cd ..
 
-python scripts/split_dataset.py
+python /content/QML-tutorial/scripts/split_dataset.py
 
 rm /content/EuroSAT.zip
