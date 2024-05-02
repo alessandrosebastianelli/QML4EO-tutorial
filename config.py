@@ -8,7 +8,7 @@ NUM_LAYERS      = 2
 SHIFT           = np.pi/4
 
 #----------------------- Dataset Settings -----------------------
-DATASET_ROOT    = 'EuroSAT_2'
+DATASET_ROOT    = 'EuroSAT'
 SPLIT_FACTOR    = 0.2
 
 CLASS_DICT      = {
