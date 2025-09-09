@@ -1,4 +1,4 @@
-pennylane==0.40.0
+pennylane==0.41.0
 numpy
 matplotlib
 qiskit
