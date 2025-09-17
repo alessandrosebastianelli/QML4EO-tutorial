@@ -3,8 +3,8 @@ matplotlib
 qiskit
 torch
 tqdm
-opencv-python==4.7.0.68
 torchinfo
 lightning
-pennylane-lightning
+pennylane-lightning==0.38.0
 pennylane==0.38.0
+autoray>=0.6.8,<0.7
