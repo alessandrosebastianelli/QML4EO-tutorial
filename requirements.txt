@@ -1,10 +1,10 @@
-pennylane==0.38.0
 numpy
 matplotlib
 qiskit
 torch
 tqdm
-opencv-python
+opencv-python==4.7.0.68
 torchinfo
 lightning
-pennylane-lightning 
+pennylane-lightning
+pennylane==0.38.0
